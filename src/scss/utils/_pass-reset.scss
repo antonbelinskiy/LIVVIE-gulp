@@ -1,0 +1,54 @@
+#pass-reset-sidebar{
+  .content{
+    .desc{
+      margin-top: 18px;
+      max-width: 310px;
+      a{
+        display: block;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        text-decoration: underline;
+        color: #92928A;
+        margin-top: -3px;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    form{
+      margin-top: 15px;
+      .form_block{
+        .form_block_content{
+          margin-top: 11px;
+        }
+      }
+      .line.buttons_line{
+        margin-top: 39px;
+        button{
+          min-width: 197px;
+        }
+      }
+    }
+  }
+}
+
+@include rmax(767){
+  #pass-reset-sidebar{
+    .content{
+      width: 100%;
+      form{
+        margin-top: 41px;
+        width: 100%;
+        .line.buttons_line{
+          button{
+            min-width: 174px;
+          }
+        }
+      }
+    }
+  }
+}/*@include rmax(767){*/

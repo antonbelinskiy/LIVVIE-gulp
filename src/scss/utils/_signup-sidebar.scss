@@ -1,0 +1,64 @@
+.auth-sidebar{
+  .form_block{
+    margin-top: 47px;
+    &:first-child{
+      margin-top: 0;
+    }
+    .title{
+      @include fs13;
+      line-height: 40px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #303A32;
+    }
+    .form_block_content{
+      .line{
+        margin-top: 30px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+#signup-sidebar{
+  overflow-y: auto;
+  padding-bottom: 44px;
+  .content{
+    .desc{
+      a{
+        display: block;
+      }
+    }
+    form{
+      margin-top: 29px;
+      .form_block_content{
+        .line{
+          margin-top: 30px;
+          &:first-child{
+            margin-top: 11px;
+          }
+        }
+      }
+      .line.buttons_line{
+        margin-top: 39px;
+      }
+    }
+  }
+}
+@include rmax(767){
+  #signup-sidebar{
+    .content{
+      width: 100%;
+      .desc{
+        max-width: 310px;
+        a{
+          display: block;
+        }
+      }
+      form{
+        margin-top: 32px;
+      }
+    }
+  }
+}

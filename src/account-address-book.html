@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+    @@include('html/head.html', {
+    "title": "LIVVIE"
+    })
+    <body class="account-page account-address-book subpage_page">
+        <div class="wrapper">
+            @@include('html/announcement_bar.html',{})
+            @@include('html/header.html',{})
+            <main class="main">
+                <div class="main__container">
+                    <div class="title_container title_container__wrapper">
+                        <h1>Account</h1>
+                        <a class="back" href="index.html">Back to home</a>
+                    </div>
+                    <div class="content_row content_row__wrapper">
+                        <div class="left_col" id="account_menu_col">
+                            <ul id="account_menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><span>Address book</span></li>
+                                <li class="logout"><a href="#">Sign out</a></li>
+                            </ul>
+
+                        </div><!-- end left_col -->
+
+                        <div class="page_content">
+                            <div class="content_heading">
+                                <h2>Address Book</h2>
+                                <div class="desc">
+                                    View and edit your saved addresses. These addresses can easily be reused during checkout.
+                                </div><!-- end desc -->
+                            </div><!-- end content_heading -->
+
+                            <div class="profile_info">
+                                <h3>Your addresses</h3>
+
+                                <div class="info_block company_info_block">
+                                    <div class="info_panel">
+                                        <div class="customer_info customer_info_company">
+                                            <div class="text title">Company</div>
+                                            <div class="text name">Jane Doe</div>
+                                            <div class="text address">Streetaddress 2</div>
+                                            <div class="text postcode">10000 Antwerp</div>
+                                            <div class="text country">Belgium</div>
+                                            <div class="text telephone">0123456789</div>
+                                        </div><!-- end customer_info -->
+                                        <div class="buttons">
+                                            <button type="button" class="reset_button button__link">Edit address</button>
+                                            <button type="button" class="reset_button button__link" disabled>Default address</button>
+                                            <button type="button" class="reset_button button__cancel">Remove address</button>
+                                        </div><!-- end buttons -->
+                                    </div><!-- end info_panel -->
+                                </div><!-- end info_block -->
+
+
+                                <div class="info_block private_info_block">
+                                    <div class="info_panel">
+                                        <div class="customer_info customer_info_company">
+                                            <div class="text title">Private</div>
+                                            <div class="text name">Jane Doe</div>
+                                            <div class="text address">Second Address 98</div>
+                                            <div class="text postcode">27000 Brussels</div>
+                                            <div class="text country">Belgium</div>
+                                            <div class="text telephone">0123456789</div>
+                                        </div><!-- end customer_info -->
+                                        <div class="buttons">
+                                            <button type="button" class="reset_button button__link">Edit address</button>
+                                            <button type="button" class="reset_button button__link">Set as default address</button>
+                                            <button type="button" class="reset_button button__cancel">Remove address</button>
+                                        </div><!-- end buttons -->
+                                    </div><!-- end info_panel -->
+                                </div><!-- end info_block -->
+
+
+                                <button type="button" class="reset_button button__link add_new_address">Add new address</button>
+
+                            </div><!-- end profile_info -->
+
+
+                        </div><!-- end page_content -->
+
+                    </div><!-- end row -->
+                </div>
+                @@include('html/components/main-menu.html',{})
+                @@include('html/components/account-menu.html',{})
+            </main>
+            @@include('html/footer.html',{})
+        </div>
+        @@include('html/cookie-bar.html',{})
+<!--        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

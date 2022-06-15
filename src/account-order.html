@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+    @@include('html/head.html', {
+    "title": "LIVVIE"
+    })
+    <body class="account-page account-page-order subpage_page">
+        <div class="wrapper">
+            @@include('html/announcement_bar.html',{})
+            @@include('html/header.html',{})
+            <main class="main">
+                <div class="main__container">
+                    <div class="title_container title_container__wrapper">
+                        <h1>Account</h1>
+                        <a class="back" href="index.html">Back to home</a>
+                    </div>
+                    <div class="content_row content_row__wrapper">
+                        <div class="left_col" id="account_menu_col">
+                            <ul id="account_menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><span>Orders</span></li>
+                                <li><a href="#">Address book</a></li>
+                                <li class="logout"><a href="#">Sign out</a></li>
+                            </ul>
+
+                        </div><!-- end left_col -->
+
+                        <div class="page_content">
+                            <div class="content_heading">
+                                <div class="heading">
+                                    <h2>Order details</h2>
+                                    <a class="back" href="#">Back to list</a>
+                                </div>
+
+                                <div class="desc">
+                                    Got a question about your orders? Please contact support.
+                                </div><!-- end desc -->
+                            </div><!-- end content_heading -->
+
+                            <div class="order_info">
+
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Order number
+                                        </div><!-- end item__title -->
+
+                                        <div class="item__content">
+                                            5012
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Order date
+                                        </div><!-- end item__title -->
+
+                                        <div class="item__content">
+                                            Apr 1, 2022  10:20
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                    <div class="item item-order-status">
+                                        <div class="item__title">
+                                            Order Status
+                                        </div><!-- end item__title -->
+
+                                        <div class="item__content">
+                                            <div class="status grey">Awaiting fulfillment</div>
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+                                </div><!-- end row -->
+
+
+                                <div class="row">
+                                    <div class="item item-delivery-method">
+                                        <div class="item__title">
+                                            Delivery method
+                                        </div><!-- end item__title -->
+                                        <div class="item__content">
+                                            DPD - At service point
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Payment method
+                                        </div><!-- end item__title -->
+                                        <div class="item__content">
+                                            Visa
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Total Paid
+                                        </div><!-- end item__title -->
+                                        <div class="item__content">
+                                            € 2076,30
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+                                </div><!-- end row -->
+
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Delivery address
+                                        </div><!-- end item__title -->
+
+                                        <div class="item__content">
+                                            <div class="item__content_subtitle">
+                                                <img src="img/payments/DPD.svg" alt="DPD" title="DPD"/> Pet’s place
+                                            </div><!-- end item__content_subtitle -->
+
+                                            <div class="value">Attn: Jane Doe</div>
+                                            <div class="value">Ambachtstraat 5</div>
+                                            <div class="value">10000 Antwerp</div>
+                                            <div class="value">Belgium</div>
+                                            <div class="value">0123456789</div>
+
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                    <div class="item">
+                                        <div class="item__title">
+                                            Billing address
+                                        </div><!-- end item__title -->
+
+                                        <div class="item__content">
+                                            <div class="item__content_subtitle">
+                                                Company
+                                            </div><!-- end item__content_subtitle -->
+
+                                            <div class="value">Jane Doe</div>
+                                            <div class="value">Streetaddress 2</div>
+                                            <div class="value">10000 Antwerp</div>
+                                            <div class="value">Belgium</div>
+                                            <div class="value">0123456789</div>
+
+                                        </div><!-- end item__content -->
+                                    </div><!-- end item -->
+
+                                </div><!-- end row -->
+                            </div><!-- end order_info -->
+
+                            <div class="order_items_container">
+                                <h3>Ordered Items</h3>
+                                <div class="ordered_items_content">
+                                    <div class="top_block">
+                                        <div class="item">
+                                            <div class="image">
+                                                <img class="img-responsive" src="img/product/emil/emil-2.webp" alt="Emil" title="Emil">
+                                            </div><!-- end image -->
+                                            <div class="info">
+                                                <div class="line name">
+                                                    EMIL
+                                                </div><!-- end name -->
+                                                <div class="line">
+                                                    <div class="title">Shirt</div>
+                                                    <div class="value">M</div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="title">Price</div>
+                                                    <div class="value">€ 799,-   <span class="old_price">€ 999,-</span></div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="title">Quantity</div>
+                                                    <div class="value">2</div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="total">€ 1598,-</div>
+                                                </div><!-- end line -->
+
+                                            </div><!-- endinfo -->
+                                        </div><!-- end item -->
+
+                                        <div class="item">
+                                            <div class="image">
+                                                <img class="img-responsive" src="img/product/emil/emil-3.webp" alt="Emil-2" title="Emil-2">
+                                            </div><!-- end image -->
+                                            <div class="info">
+                                                <div class="line name">
+                                                    Emil
+                                                </div><!-- end name -->
+
+                                                <div class="line">
+                                                    <div class="title">Pants</div>
+                                                    <div class="value">S</div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="title">Price</div>
+                                                    <div class="value">€ 699,-  <span class="old_price">€ 999,-</span></div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="title">Quantity</div>
+                                                    <div class="value">1</div>
+                                                </div><!-- end line -->
+                                                <div class="line">
+                                                    <div class="total">€ 699,-</div>
+                                                </div><!-- end line -->
+
+                                            </div><!-- endinfo -->
+
+                                        </div><!-- end item -->
+
+                                    </div><!-- end top_block -->
+
+                                    <div class="bottom_block">
+                                        <div class="line">
+                                            <div class="title">Items</div>
+                                            <div class="value">€ 2297,-</div>
+                                        </div><!-- end line -->
+                                        <div class="line">
+                                            <div class="title">Shipping to Belgium</div>
+                                            <div class="value">€ 9,-</div>
+                                        </div><!-- end line -->
+                                        <div class="line">
+                                            <div class="title">Total discount</div>
+                                            <div class="value">€ 229,70</div>
+                                        </div><!-- end line -->
+                                        <div class="line line-total">
+                                            <div class="title">Total</div>
+                                            <div class="value">€ 2076,30</div>
+                                        </div><!-- end line -->
+
+                                    </div><!-- end bottom_block -->
+
+                                </div><!-- end ordered_items_content -->
+                            </div><!-- end ordered_items_container -->
+
+
+                        </div><!-- end page_content -->
+
+                    </div><!-- end row -->
+                </div>
+                @@include('html/components/main-menu.html',{})
+                @@include('html/components/account-menu.html',{})
+            </main>
+            @@include('html/footer.html',{})
+        </div>
+        @@include('html/cookie-bar.html',{})
+<!--        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

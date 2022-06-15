@@ -1,0 +1,143 @@
+.lookbook__wrapper{
+  .product{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 150px;
+    &:first-child{
+      margin-top: 0;
+    }
+    >.image{
+      background-color: #F1F0EC;
+      width: calc(50% - 16px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    >.detail_info{
+      width: calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 1px;
+      .images{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 1px;
+        .add_image{
+          width: calc(50% - 16px);
+        }
+      }
+      .name{
+        margin-top: 85px;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: unset;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #303A32;
+      }
+      .desc{
+        @include fs13;
+        line-height: unset;
+        color: $black-earth;
+        margin-top: 28px;
+      }
+      .prices{
+        display: none;
+        margin-top: 21px;
+        /*display: flex;
+        align-items: center;
+        justify-content: center;*/
+        display: none;
+        .price{
+          @include fs18;
+          font-weight: 400;
+        }
+      }
+      a.button__link{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@include rminmax(768,991){
+  .lookbook__wrapper .product > .detail_info .name {margin-top: 15px}
+  .lookbook__wrapper .product > .detail_info .desc {margin-top: 0px}
+  .lookbook__wrapper .product > .detail_info .prices{margin-top: 5px}
+  .lookbook__wrapper .product > .detail_info a.button__link{margin-top: 15px}
+  }/*@include rminmax(768,991){*/
+
+
+@include rmin(768){
+  .lookbook__wrapper{
+    .product:nth-child(2n){
+        >.image{
+          order: 1
+        }
+        >.detail_info{
+          order: 0;
+        }
+    }
+  }
+}
+
+@include rmax(767){
+  body.lookbook-page{
+    main{
+      .main__container{
+        .title_container{
+          padding-bottom: 15px;
+          border-bottom: 1px solid #F1F0EC;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+
+
+  .lookbook__wrapper{
+    .product{
+      margin-top: 100px;
+      flex-direction: column;
+      &:first-child{
+        margin-top: 0;
+      }
+      >.image{
+        width: 100%;
+      }
+      >.detail_info{
+        width: 100%;
+        .images{
+          display:none;
+        }
+        .name{
+          @include fs21;
+          margin-top: 16px;
+        }
+        .desc{
+          margin-top: 0;
+        }
+        .prices{
+          display:none;
+        }
+        a.button__link{
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+}/*@include rmax(767){*/
+

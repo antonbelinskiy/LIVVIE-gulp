@@ -1,0 +1,146 @@
+.account-address-edit{
+  .page_content{
+    margin-left: 32px!important;
+    .content_heading{
+      .desc{
+        max-width: 650px;
+        line-height: 36px!important;
+        margin-top: 12px!important;
+      }
+    }
+    .address_info{
+      margin-top: 34px;
+      >h3{
+        @include fs13;
+        line-height: unset;
+        margin-bottom: 24px;
+      }
+      #edit_address,
+      #add_address{
+        max-width: 650px;
+        .line{
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          margin-top: 30px;
+          input{
+            width: calc(50% - 8px);
+            &:nth-child(2){
+              margin-left: 16px;
+            }
+            &.w-30{
+              width: 30%;
+            }
+            &.w-70{
+              width: 70%;
+            }
+            &.w-100{
+              width: 100%;
+            }
+          }
+          &:first-child{
+            margin-top: 0;
+          }
+          .custom_check{
+            label{
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              cursor: pointer;
+              min-height: 40px;
+              padding: 6px 0px 6px 58px;
+              position: relative;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              letter-spacing: 0.01em;
+              color: #303A32;
+              &:before{
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                background-color: #FAF9F8;
+                position: absolute;
+                top: 2px;
+                left: 0;
+              }
+              &:after{
+                font-family: 'icomoon' !important;
+                speak: never;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: "\e907";
+                font-size: 16px;
+                color: #ADA597;
+
+                position: absolute;
+                top: 14px;
+                left: 11px;
+                opacity: 0;
+                z-index: 1;
+              }
+            }
+            input{
+              position: absolute;
+              opacity: 0;
+              z-index: -1;
+              &:checked + label:after{
+                opacity: 1!important;
+                /*color: $black-earth;*/
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rmax(991){
+  .account-address-edit {
+    .page_content {
+      margin-left: 0px!important;
+      .content_heading {
+        .desc {
+          max-width: 100%;
+        }
+      }
+
+      .address_info {
+        #edit_address {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}/*@include rmax(991){*/
+
+@include rmax(767){
+  .account-address-edit .page_content .address_info #edit_address .line{
+    display: block;
+    margin-top: 28px;
+    &:first-child{
+      margin-top: 0;
+    }
+    input{
+      width: 100% !important;
+      margin-left: 0!important;
+      &:nth-child(2){
+        margin-top: 28px;
+      }
+      &[name="postcode"]{
+        width: 54.5% !important;
+      }
+      &[name="telephone"]{
+        width: 54.5% !important;
+      }
+    }
+  }
+}/*@include rmax(767){*/

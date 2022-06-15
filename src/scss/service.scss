@@ -1,0 +1,143 @@
+#service .service,
+#cookie-policy .cookie-policy {
+  margin-bottom: 283px;
+  &__banner {
+    img {
+      max-height: 457px;
+      object-position: bottom;
+      object-fit: cover;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__header {
+    padding: 0 88px;
+    display: flex;
+    align-items: baseline;
+    margin-top: 49px;
+  }
+  &__title {
+    @include fs28;
+    color: $black-earth;
+    margin-right: 16px;
+  }
+  &__link {
+    @include fs11;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: $grey-text;
+  }
+
+  &__content--wrap {
+    display: flex;
+    gap: 32px;
+    padding: 56px 88px 0;
+  }
+
+  .navigation-content {
+    max-width: 310px;
+    width: 100%;
+
+    .navigation-content__item a {
+      @include fs13;
+      line-height: 40px;
+      color: $black-earth;
+
+      &:hover {
+        color: $beige-text;
+      }
+    }
+
+    &__site-links {
+      margin-top: 50px;
+
+      h4 {
+        @include fs14;
+        color: $grey-text;
+        margin-bottom: 8px;
+      }
+    }
+
+    .navigation-content__item {
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+
+      a.active {
+        color: $beige-text;
+      }
+    }
+  }
+
+  .main-content {
+    max-width: 653px;
+    width: 100%;
+    padding-top: 3px;
+    color: $black-earth;
+
+    h2 {
+      @include fs21;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      text-align: justify;
+      margin-bottom: 36px;
+
+      &:first-of-type {
+        font-family: 'Quicksand';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 34px;
+      }
+
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 36px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    ol {
+      margin: 0px 0px 38px 8px;
+      padding-top: 8px;
+
+      li {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+        list-style-type: decimal;
+      }
+    }
+  }
+
+  .image-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 310px;
+    width: 100%;
+    padding-top: 56px;
+    padding-left: 48px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+  @include rmin(1512) {
+    .service__header,
+    .service__content--wrap {
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

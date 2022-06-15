@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Story Detail"
+})
+<body>
+<div id="story-detail" class="wrapper">
+    @@include('html/announcement_bar.html',{})
+    @@include('html/header.html',{})
+    <main class="main">
+        <div class="main__container">
+            <div class="story-detail">
+                <div class="story-detail__heading">
+                    <h2 class="story-detail__subtitle">stylish</h2>
+                    <h1 class="story-detail__title">stories</h1>
+                    <p class="story-detail__date">Apr 1, 2022</p>
+                </div>
+                <div class="story-detail__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin at leo egestas, auctor felis in, posuere turpis. Nunc dignissim pulvinar lacus eu porttitor.
+                    Etiam ac dictum arcu.
+                </div>
+                <div class="story-detail__author-block author-block">
+                    <div class="author-block__image">
+                        <img src="img/story-detail/central.png" alt="writer image">
+                    </div>
+                    <h2 class="author-block__title">Jane Doe</h2>
+                    <p class="author-block__subtitle">writing blogs</p>
+                </div>
+                <div class="story-detail__main-content main-content">
+                    <div class="main-content__text-block">
+                        <h2>Subtitle</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            nunc neque, scelerisque id fermentum id, lobortis a nisi. Maecenas gravida a turpis eu
+                            condimentum. Mauris vestibulum ac mi quis egestas.
+                        </p>
+
+                        <h4>Shopping bag</h4>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+
+                        <h4>delivery address</h4>
+                        <p>
+                            Maecenas sodales placerat turpis, sit amet mattis ligula aliquam sit amet. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Vestibulum quis ex augue. Pellentesque viverra massa ac sagittis ornare. Nam id convallis
+                            massa.
+                        </p>
+
+                        <h4>payment</h4>
+                        <p>
+                            Aliquam a dapibus neque. Fusce vel arcu et neque rhoncus lacinia. Nunc tincidunt, dui eu
+                            consequat lobortis, nisi libero facilisis libero, in sagittis est purus nec nunc.
+                            Aliquam bibendum, nunc sit amet tempor pharetra, augue ex egestas augue, id posuere leo
+                            lacus vitae metus.
+                        </p>
+                        <ol>
+                            <li>Etiam sodales tincidunt lectus nec lobortis. Mauris sem nisl, porttitor a enim
+                                gravida, scelerisque placerat lorem.
+                            </li>
+                            <li>Fusce at aliquet risus, eu porttitor nunc. Donec vulputate ante quis odio venenatis
+                                iaculis. Proin neque magna, hendrerit vitae maximus quis, tempor commodo ligula.
+                            </li>
+                            <li>Nullam sed cursus diam, at maximus est. Aliquam venenatis quis odio vitae dignissim.
+                                Ut vehicula elit at sem laoreet placerat.
+                            </li>
+                            <li>Mauris vulputate feugiat ipsum non varius. Sed quis ipsum malesuada, tempus augue.
+                            </li>
+                        </ol>
+                        <h4>Shipping</h4>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+<!--                        <div class="main-content__text-block&#45;&#45;image">-->
+<!--                        </div>-->
+                        <img src="img/story-detail/illustration.png" alt="illustration image">
+                    </div>
+                    <div class="main-content__image">
+                        <img src="img/story-detail/aside-img.png" alt="image">
+                    </div>
+                </div>
+                <a href="#" class="story-detail__link">back to stories</a>
+            </div>
+        </div>
+        @@include('html/components/main-menu.html',{})
+        @@include('html/components/account-menu.html',{})
+    </main>
+    @@include('html/footer.html',{})
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

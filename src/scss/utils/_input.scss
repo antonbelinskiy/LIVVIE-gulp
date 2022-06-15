@@ -1,0 +1,28 @@
+.reset_input{
+  webkit-appearance:none;
+  box-shadow:none;
+  -webkit-box-shadow:none;
+  -webkit-border-radius:0;
+  border-radius:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  border:none;
+  background:0 0;
+  margin:0;
+  padding:0;
+  text-decoration:none
+}
+.reset_input:active,.reset_input:focus{
+  outline:0!important;
+  border-color:#c9cbd0!important;
+  -webkit-box-shadow:none!important;
+  box-shadow:none!important
+}
+
+.reset_input{
+  padding: 12.5px 15px 12.5px 15px;
+  background-color: #FAF9F8;
+  @include fs14;
+  line-height: unset;
+  color: $black_earth;
+}

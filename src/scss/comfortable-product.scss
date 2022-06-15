@@ -1,0 +1,60 @@
+.comfortable-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $beige-main;
+  color: $black-earth;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  @include rmax(767) {
+    padding: 71px 40px 84px;
+    text-align: center;
+  }
+
+  &__wrap {
+    margin: 82px 0 224px;
+
+    @include rmax(767) {
+      margin: 0 0 0px;
+    }
+  }
+
+  &__top {
+    @include fs13;
+    color: $grey-text;
+
+    @include rmax(767) {
+      color: $black-earth;
+    }
+  }
+
+  &__title {
+    @include fs18;
+    margin-top: 43px;
+
+  }
+
+  &__text {
+    @include fs14;
+    line-height: 41px;
+
+    @include rmax(767) {
+      line-height: 32px;
+      margin-top: 5px;
+      max-width: 235px;
+    }
+  }
+
+  .button {
+    margin-top: 34px;
+    max-width: 133px;
+
+    @include rmax(767) {
+      margin-top: 29px;
+      min-width: 137px;
+      min-height: 40px;
+      margin-left: -5px;
+    }
+  }
+}

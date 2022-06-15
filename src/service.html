@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Service"
+})
+<body>
+<div id="service" class="wrapper">
+    @@include('html/announcement_bar.html',{})
+    @@include('html/header.html',{})
+    <main class="main">
+        <div class="main__container">
+            <div class="service">
+                <div class="service__banner">
+                    <img src="img/service/service-banner.png" alt="service banner">
+                </div>
+                <div class="service__header">
+                    <h1 class="service__title">Service</h1>
+                    <a class="service__link" href="#">Back to home</a>
+                </div>
+                <div class="service__content--wrap">
+                    <div class="service__content navigation-content">
+                        <ul class="navigation-content__list">
+                            <li class="navigation-content__item">
+                                <a class="navigation-content__link" href="#">Frequently asked questions</a>
+                            </li>
+                            <li class="navigation-content__item">
+                                <a class="navigation-content__link" href="#ordering">Ordering</a>
+                            </li>
+                            <li class="navigation-content__item">
+                                <a class="navigation-content__link" href="#free_shipping">Free shipping</a>
+                            </li>
+                            <li class="navigation-content__item">
+                                <a class="navigation-content__link" href="#">Returning a product</a>
+                            </li>
+                        </ul>
+                        <div class="navigation-content__site-links">
+                            <h4>See also</h4>
+                            <ul class="navigation-content__list">
+                                <li class="navigation-content__item">
+                                    <a href="#">Our values</a>
+                                </li>
+                                <li class="navigation-content__item">
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service__content main-content">
+                        <h2 class="main-content__title">Ordering</h2>
+                        <p class="main-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            nunc neque, scelerisque id fermentum id, lobortis a nisi. Maecenas gravida a turpis eu
+                            condimentum. Mauris vestibulum ac mi quis egestas.
+                        </p>
+
+                        <h4>Shopping bag</h4>
+                        <p class="main-content__text">
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+
+                        <h4>delivery address</h4>
+                        <p class="main-content__text">
+                            Maecenas sodales placerat turpis, sit amet mattis ligula aliquam sit amet. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Vestibulum quis ex augue. Pellentesque viverra massa ac sagittis ornare. Nam id convallis massa.
+                        </p>
+
+                        <h4>payment</h4>
+                        <p class="main-content__text">
+                            Aliquam a dapibus neque. Fusce vel arcu et neque rhoncus lacinia. Nunc tincidunt, dui eu
+                            consequat lobortis, nisi libero facilisis libero, in sagittis est purus nec nunc.
+                            Aliquam bibendum, nunc sit amet tempor pharetra, augue ex egestas augue, id posuere leo
+                            lacus vitae metus.
+                        </p>
+                        <ol>
+                            <li>Etiam sodales tincidunt lectus nec lobortis. Mauris sem nisl, porttitor a enim
+                                gravida, scelerisque placerat lorem.
+                            </li>
+                            <li>Fusce at aliquet risus, eu porttitor nunc. Donec vulputate ante quis odio venenatis
+                                iaculis. Proin neque magna, hendrerit vitae maximus quis, tempor commodo ligula.
+                            </li>
+                            <li>Nullam sed cursus diam, at maximus est. Aliquam venenatis quis odio vitae dignissim.
+                                Ut vehicula elit at sem laoreet placerat.
+                            </li>
+                            <li>Mauris vulputate feugiat ipsum non varius. Sed quis ipsum malesuada, tempus augue.
+                            </li>
+                        </ol>
+
+                        <h4>Shipping</h4>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+
+                    </div>
+                    <div class="service__content image-content">
+                        <img src="img/service/service-img.png" alt="service image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('html/components/main-menu.html',{})
+        @@include('html/components/account-menu.html',{})
+    </main>
+    @@include('html/footer.html',{})
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

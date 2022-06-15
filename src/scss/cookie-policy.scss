@@ -1,0 +1,122 @@
+#cookie-policy {
+  .cookie-policy {
+    color: $black-earth;
+    &__banner {
+      width: 100%;
+      img {
+          width: 100%;
+          max-height: 457px;
+          height: auto;
+          object-fit: cover;
+          object-position: top;
+        }
+    }
+    &__content--wrap {
+      .main-content {
+        p, p:first-of-type {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 32px;
+          text-align: justify;
+          letter-spacing: 0.01em;
+        }
+        h4 {
+          margin-top: 38px;
+        }
+        p {
+          margin-bottom: 30px;
+        }
+        .main-content__date {
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 36px;
+      margin-top: 36px;
+    }
+
+    table {
+      width: 652px;
+      margin-top: 16px;
+      color: $black-earth;
+
+      thead {
+        th:first-of-type {
+          width: 144px;
+        }
+
+        th:nth-of-type(2) {
+          width: 138px;
+        }
+
+        th:nth-of-type(3) {
+          width: 184px;
+        }
+
+        th:nth-of-type(4) {
+          width: 179px;
+        }
+      }
+
+      .table__title th {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.01em;
+      }
+
+      td {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        padding-bottom: 30px;
+        flex: 1 1 auto;
+      }
+
+      thead {
+        text-align: left;
+      }
+
+      tbody {
+        td {
+          vertical-align: top;
+          padding-bottom: 26px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 4px;
+  }
+  @include rmax(991) {
+    .cookie-policy {
+      .cookie-policy__banner {
+        min-width: 375px;
+        height: 375px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+  @include rmin(1600) {
+    .cookie-policy__content--wrap {
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

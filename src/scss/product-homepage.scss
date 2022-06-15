@@ -1,0 +1,130 @@
+.product-homepage {
+  margin-bottom: 128px;
+  @include rmax(767) {
+    margin-bottom: 80px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    @include rmax(767){
+      gap: unset;
+    }
+
+  }
+  &__wrapper {
+    @include rmax(767) {
+      padding: 0 !important;
+      margin-top: 102px;
+    }
+  }
+  .product-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include rmax(767) {
+      flex-direction: column;
+      position: relative;
+      gap: 44px;
+      margin-bottom: 194px;
+    }
+    &:last-of-type {
+      @include rmax(767) {
+        margin-bottom: 0px;
+      }
+    }
+    &:nth-of-type(2n) {
+      flex-direction: row-reverse;
+
+      @include rmax(767) {
+        flex-direction: column;
+      }
+    }
+
+    &__image {
+      width: 50%;
+      /*max-width: 652px;*/
+      height: auto;
+      background-color: $beige-main;
+
+      @include rmax(767) {
+        width: 100%;
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__content--wrap {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $black-earth;
+
+      @include rmax(767) {
+        width: 100%;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    &__title {
+      @include fs28;
+      text-align: center;
+    }
+
+    &__subtitle {
+      @include fs13;
+      margin-bottom: 36px;
+
+      @include rmax(767) {
+        @include fs11;
+        margin-top: 6px;
+      }
+    }
+
+    &__text {
+      @include fs14;
+      margin: 0 auto 69px;
+      max-width: 438px;
+      width: 100%;
+      text-align: center;
+      @include rminmax(768,991){
+          margin-bottom: 36px;
+      }
+      @include rmax(767) {
+        @include fs12;
+        padding: 0 32px;
+        margin-bottom: 36px;
+      }
+    }
+  }
+  .button {
+    max-width: 127px;
+  }
+}
+
+@include rmax(767) {
+  .product-homepage .product-item{
+    gap:0;
+    .product-item__content_top{
+      display: flex!important;
+      h2{
+        margin-bottom: 40px;
+      }
+    }
+    .product-item__content--wrap{
+      margin-top: 43px;
+    }
+  }
+
+}
+

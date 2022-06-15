@@ -1,0 +1,242 @@
+.stories {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  @include rmax(767) {
+    gap: 0px;
+  }
+  &__wrapper {
+    @include rmax(767) {
+      padding: 0 !important;
+    }
+  }
+
+  @include rmax(767) {
+    flex-direction: column;
+  }
+
+  &__image {
+    max-width: 652px;
+    width: 50%;
+    height: auto;
+
+    @include rmax(767) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $black-earth;
+
+    @include rmax(767) {
+      width: 100%;
+      padding: 0 30px;
+      margin-top: 38px;
+    }
+
+    &--top {
+      @include fs21;
+      line-height: normal;
+      /*margin-top: -54px;*/
+
+      @include rmax(767) {
+        margin-left: -4px;
+      }
+    }
+
+    &--title {
+      margin-top: -15px;
+      @include fs70;
+      line-height: normal;
+
+      @include rmax(767) {
+        @include fs50;
+        line-height: unset;
+        margin-top: -7px;
+        margin-left: -10px;
+      }
+    }
+
+    &--date {
+      @include fs13;
+      @include rmax(767){
+        margin-top: 7px;
+        margin-left: -5px;
+      }
+    }
+
+    &--subtitle {
+      display: flex;
+      gap: 10px;
+      @include fs14;
+      line-height: normal;
+      margin-top: 10px;
+
+      @include rmax(767) {
+        margin-top: 7px;
+        margin-left: -9px;
+      }
+    }
+
+    &--link {
+      color: $grey-text;
+      text-decoration: underline;
+    }
+
+    &--text {
+      @include fs14;
+      max-width: 433px;
+      width: 100%;
+      margin: 46px 0 47px;
+      text-align: center;
+
+      @include rminmax(768, 991) {
+        margin: 15px 0 15px;
+      }
+
+      @include rmax(767) {
+        margin: 40px 0 18px;
+      }
+    }
+  }
+
+  .button {
+    max-width: 161px;
+    margin-top: 18px;
+    @include rmax(767){
+      margin-top: 20px;
+      margin-left: -6px;
+    }
+  }
+}
+
+
+
+//#stories-page
+
+#stories-page {
+  .stories-page {
+    display: flex;
+    flex-direction: column;
+    padding: 0 88px;
+    margin-top: 72px;
+
+    .stories {
+      margin-top: 128px;
+
+      @include rmin(992) {
+        &:nth-of-type(2n) {
+          flex-direction: row-reverse;
+        }
+      }
+      .stories__image {
+        width: 100%;
+      }
+      .stories__content {
+        .stories__content--date {
+         /*margin-top: -5px;*/
+        }
+        .stories__content--text {
+          margin: 56px 0 47px;
+        }
+      }
+    }
+
+    .stories__link {
+      display: flex;
+      width: 173px;
+      margin: 158px auto 0;
+      padding: 13px 28px;
+      @include fs11;
+      color: $beige-text;
+    }
+  }
+  .footer {
+    margin-top: 283px;
+  }
+
+  @include rmax(991) {
+    .stories-page {
+      padding: 0;
+      margin: 0;
+
+      .stories {
+        margin-top: 32px;
+
+        &:not(:first-of-type) {
+          margin-top: 78px;
+        }
+        .stories__content {
+          margin-top: 0;
+          padding: 6px 30px 0;
+
+          .stories__content--title {
+            margin-top: -16px;
+            @include fs50;
+          }
+          .stories__content--date {
+            margin-top: -3px;
+          }
+          .stories__content--text {
+            margin: 39px 0px 38px 0px;
+          }
+        }
+      }
+      .stories__link {
+        margin: 221px auto 0;
+      }
+    }
+    .footer {
+      margin-top: 174px;
+    }
+  }
+  @include rmax(767) {
+    .stories-page {
+      .stories {
+        .stories__image {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  @include rminmax(768, 1199) {
+    .stories-page {
+      .stories {
+        .stories__image {
+          width: 50%;
+        }
+      }
+    }
+  }
+  @include rminmax(1200, 1599) {
+    .stories__content {
+      margin-top: 102px;
+      justify-content: flex-start;
+    }
+  }
+  @include rmin(1600) {
+    .stories-page {
+      max-width: 1350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@include rmin(1512) {
+
+  #stories-page .stories-page{
+    min-width: 1512px;
+  }
+
+}/*@include rmin(1512) {*/

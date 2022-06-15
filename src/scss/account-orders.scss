@@ -1,0 +1,11 @@
+.account-page.account-page-orders{
+  .profile_info{
+    margin-top: 37px!important;
+    .customer_orders_info_block{
+      margin-top: 29px!important;
+      &:first-child{
+        margin-top: 0!important;
+      }
+    }
+  }
+}

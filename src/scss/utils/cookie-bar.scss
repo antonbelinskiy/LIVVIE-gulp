@@ -1,0 +1,55 @@
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $black-main;
+  padding: 12px 0px 13px;
+
+  &__wrap {
+    max-width: 1512px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 103px;
+    min-height: 92px;
+    align-items: center;
+  }
+
+  &__title {
+    @include fs11;
+    color: $beige-main;
+  }
+
+  &__subtitle {
+    @include fs14;
+    color: $top-text;
+  }
+
+  &__link {
+    color: $top-text;
+    text-decoration: underline;
+  }
+
+  .button {
+    max-width: 74px;
+    width: 100%;
+    border: 1px solid $top-text;
+
+    &__link {
+      color: $top-text;
+    }
+  }
+
+  &.popup {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+    transform: translate(0%, 100%);
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+  }
+}

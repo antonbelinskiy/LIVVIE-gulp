@@ -1,0 +1,304 @@
+.account-page .content_row{
+  >.left_col{
+    min-width: 310px;
+    max-width: 310px;
+    margin-bottom: 120px;
+    ul#account_menu{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        @include fs13;
+        color:  #ADA597;
+        margin-top: 8px;
+        padding: 13px 0px;
+        a{
+          @include fs13;
+          color: $black_earth;
+        }
+        &:first-child{
+          margin-top: 0;
+        }
+        &.logout{
+          margin-top: 49px;
+        }
+      }
+    }
+  }
+
+  .page_content{
+    margin-left: 33px;
+    margin-top: 12px;
+    width: calc(100% - 343px);
+    .content_heading{
+      h2{
+        @include fs21;
+        line-height: unset;
+        color: $black_earth;
+      }
+      .desc{
+        @include fs16;
+        line-height: unset;
+        text-transform: unset;
+        color: $black-earth;
+        letter-spacing: 0.01em;
+        margin-top: 21px;
+      }
+    }
+
+    .profile_info{
+      margin-top: 35px;
+      .customer_info_block{
+        .info_panel{
+          .name{
+            @include fs16;
+            font-weight: 600;
+            line-height: unset;
+            color: $black_earth;
+            text-transform: unset;
+            letter-spacing: unset;
+            margin-top: 2px;
+          }
+          .email{
+            margin-top: 18px;
+            a{
+              @include fs13;
+              color: $black_earth;
+            }
+          }
+          .edit_button{
+            margin-top: 34px;
+          }
+        }
+      }
+      .customer_orders_info_block{
+        margin-top: 63px;
+        .info_heading{
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 21px;
+          .title{
+            @include fs13;
+          }
+          a{
+            @include fs11;
+            color: #92928A;
+            text-decoration: none;
+            margin-left: 23px;
+            margin-top: 3px;
+            line-height: unset;
+          }
+        }
+        .info_panel{
+          .order{
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              >.left_col{
+                min-width: 214px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .date{
+                  @include fs16;
+                  font-weight: 600;
+                  line-height: unset;
+                  text-transform: unset;
+                  letter-spacing: unset;
+                  color: $black_earth;
+                  margin-top: 8px;
+                }
+                .number{
+                  @include fs13;
+                  line-height: unset;
+                  color: $black_earth;
+                  margin-top: 13px;
+                }
+                .items{
+                  @include fs16;
+                  letter-spacing: 0.01em;
+                  color: $black_earth;
+                  text-transform: unset;
+                  margin-top: 23px;
+                  .total{
+                    padding-left: 14px;
+                  }
+                }
+                .status{
+                  margin-top: 15px;
+                }
+                a.button__link{
+                  margin-top: 15px;
+                }
+              }
+            >.right_col{
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              margin-left: 32px;
+              flex-wrap: wrap;
+              .item{
+                max-width: 128px;
+                max-height: 128px;
+                overflow: hidden;
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 16px 16px 0px;
+                img{
+                  max-width: 128px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.info_panel{
+  padding: 32px 30px 30px 32px;
+  background: #FAF9F8;
+}
+
+.status{
+  display: inline-block;
+  border-radius: 12.5px;
+  @include fs11;
+  color: #8B8E8A;
+  padding: 5px 15px 6px 15px;
+}
+
+.status.grey{
+  background: #F1F0EC;
+}
+
+@include rmax(991){
+  body.account-page.subpage_page main .main__container .content_row{
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+
+  .account-page .content_row > .left_col{
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 33px;
+    padding: 8px 32px 15px 32px;
+
+    background-color: #FAF9F8;
+    border-top: solid 1px #F1F0EC;
+    ul#account_menu{
+      display: block;
+      overflow: hidden;
+      li{
+        padding: 0;
+        float: left;
+        display: inline-block;
+        margin: 7px 7px 0px 0px!important;
+        min-height: 34px;
+
+        span{
+          display: block;
+          padding: 12px 30px 12px 30px;
+          background: #ADA597;
+          border-radius: 19px;
+          @include fs11;
+          color: #ffffff;
+        }
+        @include fs11;
+        a{
+          display: block;
+          padding: 12px 30px 12px 30px;
+          background: #F1F0EC;
+          border-radius: 19px;
+          @include fs11;
+          color: #92928A;
+        }
+      }
+    }
+  }
+
+
+  .account-page .content_row .page_content{
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+}/*@include rmax(991){*/
+
+
+
+
+
+
+
+
+
+@include rmax(767){
+
+  .account-page .content_row > .left_col{
+    padding: 8px 16px 15px 16px;
+  }
+
+  body.account-page .content_row .page_content{
+    padding-left: 16px;
+    padding-right: 16px;
+    .content_heading{
+      h2{
+        @include fs17;
+        line-height: unset;
+      }
+      .desc{
+        @include fs14;
+        margin-top: 10px;
+        line-height: 24px;
+      }
+    }
+    .profile_info{
+      margin-top: 25px;
+      .info_block{
+        .info_panel{
+          padding: 24px;
+        }
+      }
+      .customer_info_block{
+        .info_panel{
+          a.edit_button{
+            margin-top: 25px;
+          }
+        }
+      }
+
+      .customer_orders_info_block{
+        margin-top: 70px;
+        .info_heading{
+          margin-bottom: 15px;
+        }
+        .order{
+          display: block!important;
+          .right_col{
+            margin-left: 0!important;
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+
+
+}/*@include rmax(767){*/

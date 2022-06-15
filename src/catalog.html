@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+    @@include('html/head.html', {
+    "title": "LIVVIE"
+    })
+    <body class="catalog-page subpage_page">
+        <div class="wrapper">
+            @@include('html/announcement_bar.html',{})
+            @@include('html/header.html',{})
+            <main class="main">
+                <div class="main__container">
+                    <div class="shopify-section">
+                        <div class="title_container title_container__wrapper">
+                        <h1>Overstock</h1>
+                        <a class="back" href="index.html">Back to home</a>
+                        <button class="reset_button open_filter hidden"><span class="icon icon-filter"></span></button>
+                    </div>
+                        <div class="content_row content_row__wrapper">
+                        <div class="left_col" id="filter_col">
+                            <div id="filter">
+
+
+                                <div class="filter_header">
+                                    <div class="hidden mobile_heading">
+                                        <div class="title">Filter</div>
+                                        <button class="reset_button close_filter"><span class="icon icon-close"></span> </button>
+                                    </div><!-- end mobile_heading -->
+                                    <div class="filter_heading">
+                                        <div class="filter_statuses">
+                                            <span class="counter">2</span>
+                                            <span class="text">Filters active</span>
+                                        </div><!-- end filter_statuses -->
+
+                                        <a class="reset_filter" href="#">Reset all</a>
+                                    </div><!-- end filter_heading -->
+                                </div><!-- end filter_header -->
+
+                                <div class="filter_items">
+
+                                    <div class="filter_item">
+                                        <div class="filter_item__title">
+                                            Category
+                                        </div><!-- end filter_item__title -->
+                                        <div class="filter_item__content">
+                                            <ul>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="c1">
+                                                        <label for="c1">Blouse</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="c2">
+                                                        <label for="c2">Pants</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="c3">
+                                                        <label for="c3">Crunchy</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="c4">
+                                                        <label for="c4">Bandana</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="c5">
+                                                        <label for="c5">Hairband</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div><!-- end filter_item__content -->
+                                    </div><!-- end filter_item -->
+
+                                    <div class="filter_item">
+                                        <div class="filter_item__title">
+                                            Size
+                                        </div><!-- end filter_item__title -->
+                                        <div class="filter_item__content">
+                                            <ul>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="s1">
+                                                        <label for="s1">XS</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="s2">
+                                                        <label for="s2">S</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="s3">
+                                                        <label for="s3">M</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="s4">
+                                                        <label for="s4">L</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="s5">
+                                                        <label for="s5">One size</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div><!-- end filter_item__content -->
+                                    </div><!-- end filter_item -->
+
+                                    <div class="filter_item">
+                                        <div class="filter_item__title">
+                                            Print
+                                        </div><!-- end filter_item__title -->
+                                        <div class="filter_item__content">
+                                            <ul>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="p1">
+                                                        <label for="p1">Blue</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="p2">
+                                                        <label for="p2">Cobalt</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="p3">
+                                                        <label for="p3">Jungle</label>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="custom_check">
+                                                        <input type="checkbox" name="" id="p4">
+                                                        <label for="p4">Taupe</label>
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                        </div><!-- end filter_item__content -->
+                                    </div><!-- end filter_item -->
+
+                                </div><!-- end filter_items -->
+
+                                <div class="apply_block hidden">
+                                    <a class="button button__link">Apply filters</a>
+                                </div>
+
+                            </div><!-- end filter -->
+                        </div><!-- end left_col -->
+
+                        <div class="page_content">
+                            <div class="products_list">
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image3.webp" alt="Product" title="Product"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Summer breeze</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price"></span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image2.webp" alt="Product2" title="Product2"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image.webp" alt="Product3" title="Product3"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image3.webp" alt="Product4" title="Product4"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Summer breeze</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price"></span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image2.webp" alt="Product5" title="Product5"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image.webp" alt="Product6" title="Product6"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image3.webp" alt="Product7" title="Product7"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Summer breeze</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price"></span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image2.webp" alt="Product8" title="Product8"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+                                <div class="product">
+                                    <a href="#">
+                                        <span class="image">
+                                            <img class="img-responsive" src="img/products/image.webp" alt="Product9" title="Product9"/>
+                                        </span><!-- end image -->
+                                        <span class="bottom_block">
+                                            <span class="title">Casual chique</span>
+                                            <span class="prices">
+                                                <span class="price">€ 399,-</span>
+                                                <span class="price old_price">€ 499,-</span>
+                                            </span>
+                                        </span><!-- end bottom_block -->
+                                    </a>
+                                </div><!-- end product -->
+
+
+                            </div><!-- end products_list -->
+
+
+                        </div><!-- end page_content -->
+
+                    </div><!-- end row -->
+                    </div><!-- end shopify-section -->
+                </div>
+                @@include('html/components/main-menu.html',{})
+                @@include('html/components/account-menu.html',{})
+            </main>
+            @@include('html/footer.html',{})
+        </div>
+        @@include('html/cookie-bar.html',{})
+<!--        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+        <script src="js/app.min.js?v=0.3"></script>
+    </body>
+</html>

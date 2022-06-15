@@ -1,0 +1,24 @@
+#pass-reset-success{
+  .content{
+    .button__link{
+      min-width: 197px;
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
+}
+
+@include rmax(767){
+  #pass-reset-success{
+    right: -100%;
+    &.active{
+      right:0;
+    }
+    .content{
+      .button__link{
+        min-width: 177px;
+        margin-top: 61px;
+      }
+    }
+  }
+}

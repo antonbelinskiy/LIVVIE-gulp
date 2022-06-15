@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "The Brand"
+})
+<body>
+<div id="brand" class="wrapper">
+    @@include('html/announcement_bar.html',{})
+    @@include('html/header.html',{})
+    <main class="main">
+        <div class="main__container">
+            <div class="brand">
+                <div class="brand__banner">
+                    <img src="img/brand/brand-banner.png" alt="brand banner">
+                </div>
+
+                @@include('html/team.html', {})
+
+                <div class="comfortable-product__wrap">
+                    <div class="comfortable-product">
+                        <h4 class="comfortable-product__top">LIV|VIE anvers</h4>
+                        <h2 class="comfortable-product__title">“Wear clothes that make you happy”</h2>
+                        <p class="comfortable-product__text">We believe in wearing clothes that are designed to ‘be better’, in every way possible; for our planet, for you, for your loved ones & supporting communities in need. The luxurious silk is a natural fabric with a rich history, sourced and processed in an ethical and socially responsible way.
+                        </p>
+                    </div>
+                </div>
+
+                <ul class="brand__list">
+                    <li class="brand__item">
+                        <div>
+                            <img src="img/brand/brand1.png" alt="brand picture">
+                        </div>
+                        <h2>Beginnings</h2>
+                        <p>A creative intention setting in motion an amazing creative flow and manifestation.</p>
+                        <a href="#">Read more</a>
+                    </li>
+                    <li class="brand__item">
+                        <div>
+                            <img src="img/brand/brand2.png" alt="brand picture">
+                        </div>
+                        <h2>The Story of the Suit</h2>
+                        <p>The LIV|VIE Suit is meant to be worn for your everyday activities - and for a long time.</p>
+                        <a href="#">Read more</a>
+                    </li>
+                    <li class="brand__item">
+                        <div>
+                            <img src="img/brand/brand3.png" alt="brand picture">
+                        </div>
+                        <h2>ANVERS</h2>
+                        <p>We chose this pronunciation for the intangible French linguistic heritage in our Belgian culture. </p>
+                        <a href="#">Read more</a>
+                    </li>
+                    <li class="brand__item">
+                        <div>
+                            <img src="img/brand/brand4.png" alt="brand picture">
+                        </div>
+                        <h2>Press & Collaborations</h2>
+                        <p>Success is not achieved alone, but is the result of teamwork. </p>
+                        <a href="#">Read more</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        @@include('html/components/main-menu.html',{})
+        @@include('html/components/account-menu.html',{})
+    </main>
+    @@include('html/footer.html',{})
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

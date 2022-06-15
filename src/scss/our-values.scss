@@ -1,0 +1,170 @@
+
+#our-values .our-values__content ul,
+#brand .brand .brand__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 117px;
+  max-width: 832px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 32px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 16px);
+    margin-bottom: 38px;
+
+    div {
+      max-width: 400px;
+      height: 300px;
+      margin-bottom: 29px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    a {
+      @include fs11;
+      color: $beige-text;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    p {
+      padding: 7px 20px;
+    }
+  }
+}
+#our-values {
+  .our-values {
+    margin-top: 120px;
+
+    & > div:first-of-type {
+      max-height: 457px;
+      max-width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      color: $black-earth;
+
+      & > div {
+        width: 755px;
+        margin-top: 44px;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+          padding-top: 4px;
+        }
+      }
+
+      h1 {
+        @include fs13;
+        color: $grey-text;
+        text-align: center;
+        margin-top: 14px;
+      }
+
+      h2 {
+        @include fs18;
+        text-align: center;
+      }
+
+      p {
+        @include fs14;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .footer {
+    margin-top: 118px;
+  }
+
+  //Responsive wax-width(991px)
+  @include rmax(991) {
+    .header {
+      background-color: $grey-dark;
+    }
+    .our-values {
+      margin-top: 32px;
+
+      & > div:first-of-type {
+        min-width: 375px;
+        height: 375px;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      &__content {
+        & > div {
+          width: 100%;
+        }
+
+        h1 {
+          margin-top: 5px;
+        }
+
+        p {
+          padding: 4px 54px 0;
+          @include fs16;
+          line-height: 36px;
+          letter-spacing: 0.01em;
+          text-transform: none;
+        }
+
+        ul {
+          gap: 24px;
+          li {
+            width: 100%;
+            padding-bottom: 50px;
+            margin-bottom: 0;
+            div {
+              img {
+                height: 100%;
+              }
+            }
+            p {
+              @include fs14;
+            }
+            a {
+              margin-top: 22px;}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@include rmax(767){
+  #our-values .our-values__content ul li div, #brand .brand .brand__list li div{
+    width: 100%;
+    max-width: 100%;
+  }
+  #our-values .our-values__content ul li div img, #brand .brand .brand__list li div img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+}/*@include rmax(767){*/

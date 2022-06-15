@@ -1,0 +1,70 @@
+.account-page.account-page-edit .page_content{
+  .content_heading{
+    .desc{
+      max-width: 650px;
+      line-height: 36px!important;
+      margin-top: 12px!important;
+    }
+  }
+  .profile_info{
+    max-width: 650px;
+    margin-top: 26px!important;
+    #edit_customer_profile{
+      .line{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        &:first-child{
+          margin-top: 0;
+        }
+        input{
+          width: calc(50% - 8px);
+          &:nth-child(2){
+            margin-left: 16px;
+          }
+          &.w-100{
+            width: 100%;
+          }
+        }
+        &.buttons_line{
+          justify-content: flex-start;
+          button.button__cancel{
+            border:none;
+            background: none;
+            margin-left: 16px;
+            color: #ADA597;
+            &:hover{
+              color: $black-earth;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include rmax(767){
+
+  body.account-page .content_row .page_content .content_heading .desc{
+    line-height: 24px!important;
+  }
+
+  .account-page.account-page-edit .page_content .profile_info #edit_customer_profile .line{
+    margin-top: 28px;
+    display: block;
+  }
+
+  .account-page.account-page-edit .page_content .profile_info #edit_customer_profile .line input{
+    width: 100%;
+    margin: 0;
+  }
+
+  .account-page.account-page-edit .page_content .profile_info #edit_customer_profile .line input:nth-child(2){
+    margin-top: 28px;
+    margin-left: 0;
+  }
+
+
+}/*@include rmax(767){*/

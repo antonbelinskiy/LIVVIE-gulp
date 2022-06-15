@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+    @@include('html/head.html', {
+    "title": "LIVVIE"
+    })
+    <body class="account-page account-address-edit subpage_page">
+        <div class="wrapper">
+            @@include('html/announcement_bar.html',{})
+            @@include('html/header.html',{})
+            <main class="main">
+                <div class="main__container">
+                    <div class="title_container title_container__wrapper">
+                        <h1>Account</h1>
+                        <a class="back" href="index.html">Back to home</a>
+                    </div>
+                    <div class="content_row content_row__wrapper">
+                        <div class="left_col" id="account_menu_col">
+                            <ul id="account_menu">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Orders</a></li>
+                                <li><span>Address book</span></li>
+                                <li class="logout"><a href="#">Sign out</a></li>
+                            </ul>
+
+                        </div><!-- end left_col -->
+
+                        <div class="page_content">
+                            <div class="content_heading">
+                                <h2>Address Book</h2>
+                                <div class="desc">
+                                    View and edit your saved addresses. These addresses can easily be reused during checkout.
+                                </div><!-- end desc -->
+                            </div><!-- end content_heading -->
+
+                            <div class="address_info">
+                                <h3>Your address</h3>
+                                <form id="edit_address">
+                                    <div class="line">
+                                        <input class="reset_input" type="text" name="firstname" placeholder="Jane"/>
+                                        <input class="reset_input" type="text" name="lastname" placeholder="Doe"/>
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <input class="reset_input w-50" type="text" name="company" placeholder="Company"/>
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <div class="custom_select">
+                                            <select>
+                                                <option>Belgium</option>
+                                                <option value="Spain">Spain</option>
+                                                <option value="France">France</option>
+                                                <option value="Italy">Italy</option>
+                                                <option value="Germany">Germany</option>
+                                            </select>
+                                        </div><!-- end custom_select -->
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <input class="reset_input w-100" type="text" name="address" placeholder="Streetaddress 2"/>
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <input class="reset_input w-30" type="text" name="postcode" placeholder="10000"/>
+                                        <input class="reset_input w-70" type="text" name="city" placeholder="Antwerp"/>
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <input class="reset_input w-50" type="text" name="telephone" placeholder="0123456789"/>
+                                    </div><!-- end line -->
+
+                                    <div class="line">
+                                        <div class="custom_check">
+                                            <input type="checkbox" name="address_default" id="address_default"/>
+                                            <label for="address_default">Set as default address</label>
+                                        </div>
+                                    </div><!-- end line -->
+
+                                    <div class="line buttons_line">
+                                        <button type="submit" class="reset_button button__link">Save</button>
+                                        <button type="button" class="reset_button button__link button__cancel">Cancel</button>
+                                    </div><!-- end buttons_line -->
+
+                                </form><!-- end edit_customer_profile -->
+
+
+                            </div><!-- end address_info -->
+
+
+                        </div><!-- end page_content -->
+
+                    </div><!-- end row -->
+                </div>
+                @@include('html/components/main-menu.html',{})
+                @@include('html/components/account-menu.html',{})
+            </main>
+            @@include('html/footer.html',{})
+        </div>
+        @@include('html/cookie-bar.html',{})
+<!--        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>-->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

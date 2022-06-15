@@ -1,0 +1,33 @@
+#left-sidebar {
+  position: fixed;
+  top:0;
+  right: -100%;
+  width: 419px;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: all 0.8s ease 0s;
+  padding: 34px 0 0 0;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  &.active{
+    right: 0;
+  }
+  .popup-menu__content {
+    position: static;
+    height: 100%;
+    button {
+      cursor: pointer;
+    }
+  }
+  @include rmax(767){
+    width: 100%;
+  }
+}

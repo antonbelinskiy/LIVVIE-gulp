@@ -1,0 +1,87 @@
+.account-page.account-address-book .page_content{
+  .content_heading{
+    .desc{
+      max-width: 650px;
+      line-height: 36px!important;
+      margin-top: 12px!important;
+    }
+  }
+  .profile_info {
+    max-width: 650px;
+    margin-top: 40px!important;
+    h3{
+      @include fs13;
+      color: $black_earth;
+      margin-bottom: 20px;
+    }
+    .info_block{
+      .info_panel{
+        .customer_info{
+          .text{
+            @include fs16;
+            color: $black_earth;
+            text-transform: unset;
+            line-height: unset;
+            margin-top: 20px;
+            letter-spacing: 0.01em;
+          }
+          .text.title{
+            font-weight: 600;
+            margin-top: 0;
+          }
+        }
+        .buttons{
+          margin-top: 37px;
+          button:nth-child(2){
+            margin-left: 13px;
+          }
+        }
+      }
+    }
+    .info_block.private_info_block{
+      margin-top: 10px;
+    }
+    .add_new_address{
+      margin-top: 26px;
+    }
+  }
+}
+
+@include rmax(767){
+
+
+  .account-page.account-address-book .page_content .profile_info h3{margin-bottom: 13px;}
+  body.account-page.account-address-book .content_row .page_content .profile_info .info_block .info_panel{
+    padding-bottom: 15px;
+  }
+
+
+  .account-page.account-address-book .page_content .profile_info .info_block .info_panel .customer_info .text.title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+  .account-page.account-address-book .page_content .profile_info .info_block .info_panel .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 29px;
+  }
+
+  .account-page.account-address-book .page_content .profile_info .info_block .info_panel .buttons button{
+    margin-left: 0!important;
+  }
+
+  .account-page.account-address-book .page_content .profile_info .info_block .info_panel .buttons button{
+    margin-top: 20px;
+  }
+
+  .account-page.account-address-book .page_content .profile_info .info_block .info_panel .buttons button:first-child{
+    margin-top: 0px;
+  }
+
+}/*@include rmax(767){*/

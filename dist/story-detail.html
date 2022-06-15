@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css?v=2.1">
+    <title>Story Detail</title>
+</head>
+
+<body>
+<div id="story-detail" class="wrapper">
+    <div class="announcement-bar__container">
+    <div class="announcement-bar">
+        <ul class="announcement-bar__list">
+            <li class="announcement-bar__item"><a href="#">Order the suit, get 10% discount</a></li>
+            <li class="announcement-bar__item mobile-hide"><a href="#">Another USP</a></li>
+        </ul>
+        <div class="announcement-bar__locale locale mobile-hide">
+
+            <img class="locale__image" src="img/locale.svg" width="19" alt="language">
+            <span class="locale__text">
+                 <a class="location-sidebar" href="#">English</a> - <a class="location-sidebar" href="#">Belgium</a>
+            </span>
+
+        </div>
+    </div>
+</div>
+
+    <div id="sidebar-overlay"></div>
+
+<div id="cart-sidebar" class="popup-sidebar">
+    <div class="heading">
+        <div class="title">Shopping bag</div>
+        <button type="button" class="reset_button" id="close_cart_button">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="cart_items">
+
+        <div class="item">
+            <div class="image">
+                <img class="img-responsive" src="img/product/emil/emil-1.webp" alt="Emil" title="Emil">
+            </div><!-- end image -->
+            <div class="info">
+                <div class="line name">
+                    EMIL
+                </div><!-- end name -->
+                <div class="line">
+                    <div class="title">Shirt</div>
+                    <div class="value">M</div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Pants</div>
+                    <div class="value">S</div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Price</div>
+                    <div class="value">€ 799,-   <span class="old_price">€ 999,-</span></div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Quantity</div>
+                    <div class="value">2</div>
+                </div><!-- end line -->
+                <div class="line line-total">
+                    <div class="total">€ 1598,-</div>
+                    <button class="reset_button cart_remove">Remove</button>
+                </div><!-- end line -->
+
+            </div><!-- endinfo -->
+        </div><!-- end item -->
+
+        <div class="item">
+            <div class="image">
+                <img class="img-responsive" src="img/product/emil/emil-3.webp" alt="Emil" title="Emil">
+            </div><!-- end image -->
+            <div class="info">
+                <div class="line name">
+                    EMIL
+                </div><!-- end name -->
+                <div class="line">
+                    <div class="title">Pants</div>
+                    <div class="value">S</div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Price</div>
+                    <div class="value">€ 799,-   <span class="old_price">€ 999,-</span></div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Quantity</div>
+                    <div class="value">2</div>
+                </div><!-- end line -->
+                <div class="line line-total">
+                    <div class="total">€ 699,-</div>
+                    <button class="reset_button cart_remove">Remove</button>
+                </div><!-- end line -->
+
+            </div><!-- endinfo -->
+        </div><!-- end item -->
+
+        <div class="item">
+            <div class="image">
+                <img class="img-responsive" src="img/product/emil/emil-3.webp" alt="Emil" title="Emil">
+            </div><!-- end image -->
+            <div class="info">
+                <div class="line name">
+                    EMIL
+                </div><!-- end name -->
+                <div class="line">
+                    <div class="title">Pants</div>
+                    <div class="value">S</div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Price</div>
+                    <div class="value">€ 799,-   <span class="old_price">€ 999,-</span></div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Quantity</div>
+                    <div class="value">2</div>
+                </div><!-- end line -->
+                <div class="line line-total">
+                    <div class="total">€ 699,-</div>
+                    <button class="reset_button cart_remove">Remove</button>
+                </div><!-- end line -->
+
+            </div><!-- endinfo -->
+        </div><!-- end item -->
+
+        <div class="item">
+            <div class="image">
+                <img class="img-responsive" src="img/product/emil/emil-3.webp" alt="Emil" title="Emil">
+            </div><!-- end image -->
+            <div class="info">
+                <div class="line name">
+                    EMIL
+                </div><!-- end name -->
+                <div class="line">
+                    <div class="title">Pants</div>
+                    <div class="value">S</div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Price</div>
+                    <div class="value">€ 799,-   <span class="old_price">€ 999,-</span></div>
+                </div><!-- end line -->
+                <div class="line">
+                    <div class="title">Quantity</div>
+                    <div class="value">2</div>
+                </div><!-- end line -->
+                <div class="line line-total">
+                    <div class="total">€ 699,-</div>
+                    <button class="reset_button cart_remove">Remove</button>
+                </div><!-- end line -->
+
+            </div><!-- endinfo -->
+        </div><!-- end item -->
+
+    </div><!-- end cart_items -->
+
+    <div class="cart_totals_container">
+        <div class="cart_totals_info">
+            <div class="line">
+                <div class="title">Items</div>
+                <div class="value">€ 2297,-</div>
+            </div><!-- end line -->
+            <div class="line">
+                <div class="title">Shipping to Belgium</div>
+                <div class="value">€ 9,-</div>
+            </div><!-- end line -->
+            <div class="line total-discount">
+                <div class="title">Total discount</div>
+                <div class="value">€ 229,70</div>
+            </div><!-- end line -->
+
+        </div><!-- end cart_totals_info -->
+
+        <div class="cart_total">
+            <div class="left_col">
+                <div class="title">Total</div>
+                <div class="value">€ 2076,30</div>
+            </div><!-- end left_col -->
+            <button class="button black_button checkout_link">Check-out</button>
+
+        </div><!-- end cart_total -->
+
+
+    </div><!-- end cart_totals_container -->
+
+
+
+</div><!-- end cart-sidebar -->
+
+<div id="signin-sidebar" class="auth-sidebar popup-sidebar">
+    <div class="heading">
+        <img src="img/Logo-sidebar.svg" alt="logo" width="150" height="57">
+        <button type="button" class="reset_button close_sidebar">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="content">
+        <div class="title">Sign in</div>
+        <div class="desc">
+            Sign in to your account using your credentials. If you don’t have an account you can also <a href="#" id="link_signup">create a new account</a>
+        </div><!-- end desc -->
+        <form>
+            <div class="line">
+                <input class="reset_input" type="email" name="email" placeholder="E-mail address">
+            </div><!-- end line -->
+            <div class="line">
+                <input class="reset_input" type="password" name="password" placeholder="Password">
+            </div><!-- end line -->
+            <div class="line text_line">
+                Forgot your password? <a href="#" id="link_reset_password">Click here to reset.</a>
+            </div><!-- end line -->
+            <div class="line buttons_line">
+                <button class="reset_button button__link">Sign in</button>
+            </div><!-- end line -->
+
+        </form>
+    </div><!-- end content -->
+
+
+
+</div><!-- end cart-sidebar -->
+
+<div id="signup-sidebar" class="auth-sidebar popup-sidebar">
+    <div class="heading">
+        <img src="img/Logo-sidebar.svg" alt="logo" width="150" height="57">
+        <button type="button" class="reset_button close_sidebar">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="content">
+        <div class="title">Sign up</div>
+        <div class="desc">
+            Create a new account with your email address. Already have an account? <a href="#" class="link_signin">Sign in to your account</a>
+        </div><!-- end desc -->
+        <form>
+
+            <div class="form_block">
+                <div class="title">Your name</div>
+                <div class="form_block_content">
+                    <div class="line">
+                        <input class="reset_input" type="text" name="firstname" placeholder="First name"/>
+                    </div>
+                    <div class="line">
+                        <input class="reset_input" type="text" name="lastname" placeholder="Last name">
+                    </div>
+                </div><!-- end form_block_content -->
+            </div><!-- end form_block -->
+
+
+            <div class="form_block">
+                <div class="title">Your account</div>
+                <div class="form_block_content">
+                    <div class="line">
+                        <input class="reset_input" type="email" name="email" placeholder="E-mail address">
+                    </div><!-- end line -->
+                    <div class="line">
+                        <input class="reset_input" type="password" name="password" placeholder="Password">
+                    </div><!-- end line -->
+                    <div class="line">
+                        <input class="reset_input" type="password" name="confirmpassword" placeholder="Confirm Password">
+                    </div><!-- end line -->
+                </div><!-- end form_block_content -->
+            </div><!-- end form_blockform_block -->
+
+            <div class="line buttons_line">
+                <button class="reset_button button__link">Create an account</button>
+            </div><!-- end line -->
+
+        </form>
+    </div><!-- end content -->
+
+
+
+</div><!-- end cart-sidebar -->
+
+<div id="pass-reset-sidebar" class="auth-sidebar popup-sidebar">
+    <div class="heading">
+        <img src="img/Logo-sidebar.svg" alt="logo" width="150" height="57">
+        <button type="button" class="reset_button close_sidebar">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="content">
+        <div class="title">PASSWORD RESET</div>
+        <div class="desc">
+            Type your email address, we will send you instructions on how to reset your password. <a href="#" class="link_signin">Or click here to log in.</a>
+        </div><!-- end desc -->
+
+        <form>
+            <div class="form_block">
+                <div class="title">Recovery email</div>
+                <div class="form_block_content">
+                    <div class="line">
+                        <input class="reset_input" type="email" name="email" placeholder="E-mail address"/>
+                    </div>
+                </div><!-- end form_block_content -->
+            </div><!-- end form_block -->
+
+            <div class="line buttons_line">
+                <button class="reset_button button__link">Reset Password</button>
+            </div><!-- end line -->
+        </form>
+    </div><!-- end content -->
+
+
+
+</div><!-- end cart-sidebar -->
+
+<div id="pass-reset-success" class="auth-sidebar popup-sidebar">
+
+    <div class="heading">
+        <img src="img/Logo-sidebar.svg" alt="logo" width="150" height="57">
+        <button type="button" class="reset_button close_sidebar">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="content">
+        <div class="title">Password reset<br>succesful</div>
+        <a class="reset_button button__link signin_sidebar">Click to log in</a>
+    </div><!-- end content -->
+
+</div><!-- end cart-sidebar -->
+
+<div id="location-sidebar" class="popup-sidebar">
+    <div class="heading">
+        <div class="title">Location</div>
+        <button type="button" class="reset_button close_button close_sidebar">
+            <span class="icon icon-close"></span>
+        </button>
+    </div><!-- end heading -->
+
+    <div class="items_container">
+        <div class="item">
+            <div class="item_title">
+                Language
+            </div><!-- end item_title -->
+            <div class="item_content">
+                <div class="custom_select_location">
+                    <select>
+                        <option>English</option>
+                        <option>Dutch </option>
+                    </select>
+                </div><!-- end custom_select -->
+            </div><!-- end item_content -->
+        </div><!-- end item -->
+
+        <div class="item">
+            <div class="item_title">
+                Show prices in
+            </div><!-- end item_title -->
+            <div class="item_content">
+                <div class="custom_select_location">
+                    <select>
+                        <option>Euro</option>
+                        <option>Euro</option>
+                    </select>
+                </div><!-- end custom_select -->
+
+            </div><!-- end item_content -->
+        </div><!-- end item -->
+
+        <div class="item">
+            <div class="item_title">
+                Shipping to
+            </div><!-- end item_title -->
+            <div class="item_content">
+                    <div class="custom_select_location">
+                        <select>
+                            <option>Belgium</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>Italy</option>
+                            <option>Luxembourg</option>
+                            <option>The Netherlands</option>
+                            <option>Rest of Europe</option>
+                            <option>Outside of Europe</option>
+                        </select>
+                    </div><!-- end custom_select_location -->
+
+
+            </div><!-- end item_content -->
+        </div><!-- end item -->
+
+    </div><!-- end items_container -->
+
+
+
+
+
+
+
+
+</div><!-- end cart-sidebar -->
+
+<header id="header" class="header">
+    <div class="header__left_col">
+        <a href="#main-menu" class="main-menu__link popup-link">
+            <span></span>
+        </a>
+
+        <ul class="header__menu mobile-xs-hide tablet-sm-hide">
+            <li class="mega-menu__item mobile-hide dropdown">
+                <a href="#" class="mega-menu__link">Lookbook</a>
+                <div class="mega-menu__submenu">
+                    <div class="submenu_title">
+                        <a href="#">
+                            Lookbook
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">LIV</span>
+                                <span class="desc">The Original Cobalt Blue Suit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">EMIL</span>
+                                <span class="desc">The Vibrant Jungle Suit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">CAMILLE</span>
+                                <span class="desc">The Rose Blush Suit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">MAGNUS</span>
+                                <span class="desc">The Navy Blue Suit</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- end mega-menu__submenu -->
+
+            </li>
+            <li class="mega-menu__item mobile-hide dropdown">
+                <a href="#" class="mega-menu__link">The brand</a>
+                <div class="mega-menu__submenu">
+                    <div class="submenu_title">
+                        <a href="#">Brand</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">Our Team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Beginnings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">The Story of the Suit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">ANVERS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Press and Collaborations</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div><!-- end mega-menu__submenu -->
+            </li>
+        </ul>
+    </div><!-- end header__left_col -->
+
+    <a id="logo">
+        <img src="img/Logo.svg" alt="logo">
+    </a>
+
+    <div class="header__right_col">
+        <ul class="header__menu mobile-xs-hide tablet-sm-hide">
+<!--            <li class="mega-menu__item mobile-xs-hide">-->
+<!--                <a href="#" class="mega-menu__link">our values</a>-->
+<!--            </li>-->
+            <li class="mega-menu__item mobile-hide dropdown">
+                <a href="#" class="mega-menu__link">our values</a>
+                <div class="mega-menu__submenu">
+                    <div class="submenu_title">
+                        <a href="#">Our values</a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="title">Authenticity</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Responsibility</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Sustainability</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="title">Giving Back</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div><!-- end mega-menu__submenu -->
+            </li>
+            <li class="mega-menu__item mobile-hide mobile-xs-hide">
+                <a href="#" class="mega-menu__link">stories</a>
+            </li>
+        </ul>
+
+        <div class="add_links">
+            <a href="#account-menu" class="signin_sidebar account__link mobile-xs-hide tablet-sm-hide">
+                <span class="icon icon-account"></span>
+            </a>
+            <a href="#cart-menu" class="cart__link popup-link">
+                <span class="icon icon-cart"></span>
+                <span class="total">4</span>
+            </a>
+        </div><!-- end add_links -->
+
+    </div><!-- end header__right_col -->
+</header>
+
+
+
+    <main class="main">
+        <div class="main__container">
+            <div class="story-detail">
+                <div class="story-detail__heading">
+                    <h2 class="story-detail__subtitle">stylish</h2>
+                    <h1 class="story-detail__title">stories</h1>
+                    <p class="story-detail__date">Apr 1, 2022</p>
+                </div>
+                <div class="story-detail__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin at leo egestas, auctor felis in, posuere turpis. Nunc dignissim pulvinar lacus eu porttitor.
+                    Etiam ac dictum arcu.
+                </div>
+                <div class="story-detail__author-block author-block">
+                    <div class="author-block__image">
+                        <img src="img/story-detail/central.png" alt="writer image">
+                    </div>
+                    <h2 class="author-block__title">Jane Doe</h2>
+                    <p class="author-block__subtitle">writing blogs</p>
+                </div>
+                <div class="story-detail__main-content main-content">
+                    <div class="main-content__text-block">
+                        <h2>Subtitle</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                            nunc neque, scelerisque id fermentum id, lobortis a nisi. Maecenas gravida a turpis eu
+                            condimentum. Mauris vestibulum ac mi quis egestas.
+                        </p>
+
+                        <h4>Shopping bag</h4>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+
+                        <h4>delivery address</h4>
+                        <p>
+                            Maecenas sodales placerat turpis, sit amet mattis ligula aliquam sit amet. Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Vestibulum quis ex augue. Pellentesque viverra massa ac sagittis ornare. Nam id convallis
+                            massa.
+                        </p>
+
+                        <h4>payment</h4>
+                        <p>
+                            Aliquam a dapibus neque. Fusce vel arcu et neque rhoncus lacinia. Nunc tincidunt, dui eu
+                            consequat lobortis, nisi libero facilisis libero, in sagittis est purus nec nunc.
+                            Aliquam bibendum, nunc sit amet tempor pharetra, augue ex egestas augue, id posuere leo
+                            lacus vitae metus.
+                        </p>
+                        <ol>
+                            <li>Etiam sodales tincidunt lectus nec lobortis. Mauris sem nisl, porttitor a enim
+                                gravida, scelerisque placerat lorem.
+                            </li>
+                            <li>Fusce at aliquet risus, eu porttitor nunc. Donec vulputate ante quis odio venenatis
+                                iaculis. Proin neque magna, hendrerit vitae maximus quis, tempor commodo ligula.
+                            </li>
+                            <li>Nullam sed cursus diam, at maximus est. Aliquam venenatis quis odio vitae dignissim.
+                                Ut vehicula elit at sem laoreet placerat.
+                            </li>
+                            <li>Mauris vulputate feugiat ipsum non varius. Sed quis ipsum malesuada, tempus augue.
+                            </li>
+                        </ol>
+                        <h4>Shipping</h4>
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Vestibulum cursus ligula ac urna facilisis, nec elementum libero porta. Nullam id
+                            convallis nibh, sed venenatis nibh. Praesent quis lectus ut libero porta suscipit et nec
+                            sapien.
+                        </p>
+<!--                        <div class="main-content__text-block&#45;&#45;image">-->
+<!--                        </div>-->
+                        <img src="img/story-detail/illustration.png" alt="illustration image">
+                    </div>
+                    <div class="main-content__image">
+                        <img src="img/story-detail/aside-img.png" alt="image">
+                    </div>
+                </div>
+                <a href="#" class="story-detail__link">back to stories</a>
+            </div>
+        </div>
+        <!--<div id="popup-menu-overlay"></div>-->
+<div id="left-sidebar" class="main-menu popup-menu popup">
+    <div class="popup-menu__body">
+        <div class="popup-menu__content popup__content">
+            <button type="button" class="reset_button popup-menu__close close-popup" id="close_menu_button">
+                <span class="icon icon-close"></span>
+            </button>
+            <!--<img class="popup-menu__logo" src="img/Logo-dark.svg" width="141px" alt="Logo">-->
+
+            <div class="popup-menu__logo">
+                <svg width="141" height="56" viewBox="0 0 495 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_91_778)">
+                    <g clip-path="url(#clip1_91_778)">
+                        <path d="M210.34 187.9V202.86H208.98V199.12H203.04L200.68 202.86H199.06L208.52 187.9H210.34ZM203.9 197.75H208.97V189.74L203.9 197.75Z" fill="#303A32"/>
+                        <path d="M210.47 202.98H208.86V199.241H203.11L200.75 202.98H198.83L198.95 202.79L208.45 187.771H210.46V202.98H210.47ZM209.11 202.73H210.22V188.021H208.59L199.29 202.73H200.61L202.97 198.991H209.1V202.73H209.11ZM209.11 197.87H203.69L209.11 189.301V197.87ZM204.14 197.62H208.86V190.171L204.14 197.62Z" fill="#303A32"/>
+                        <path d="M228.9 187.9V202.86H227.42L219.96 190.39V202.86H218.58V187.9H220.07L227.52 200.37V187.9H228.9Z" fill="#303A32"/>
+                        <path d="M229.03 202.98H227.35L227.31 202.921L220.08 190.84V202.98H218.45V187.771H220.14L220.18 187.831L227.4 199.911V187.771H229.03V202.98ZM227.5 202.73H228.78V188.021H227.65V200.821L220 188.021H218.71V202.73H219.84V189.93L227.5 202.73Z" fill="#303A32"/>
+                        <path d="M248.42 187.9L238.96 202.86H237.13V187.9H238.51V201.02L246.8 187.9H248.42Z" fill="#303A32"/>
+                        <path d="M239.03 202.98H237.01V187.771H238.64V200.581L246.74 187.771H248.66L248.54 187.961L239.04 202.98H239.03ZM237.26 202.73H238.9L248.2 188.021H246.88L238.4 201.451V188.021H237.27V202.73H237.26Z" fill="#303A32"/>
+                        <path d="M263.38 187.899V189.279H257.12V194.679H262.07V196.059H257.12V201.499H263.38V202.879H255.74V187.919H263.38V187.899Z" fill="#303A32"/>
+                        <path d="M263.51 203.01H255.62V187.8H263.39V187.9H263.51V189.4H257.25V194.55H262.2V196.18H257.25V201.37H263.51V203V203.01ZM255.87 202.76H263.26V201.63H257V195.94H261.95V194.81H257V189.16H263.26V188.05H255.87V202.76Z" fill="#303A32"/>
+                        <path d="M281.03 202.86H279.49L275.98 196.1H272.4V202.85H271.02V187.9H276.4C277.53 187.9 278.5 188.3 279.3 189.11C280.1 189.91 280.5 190.87 280.5 192.01C280.5 192.95 280.21 193.79 279.64 194.53C279.08 195.25 278.35 195.73 277.47 195.97L281.03 202.86ZM276.4 194.72C277.15 194.72 277.79 194.46 278.33 193.93C278.86 193.39 279.12 192.75 279.12 192C279.12 191.25 278.86 190.61 278.33 190.07C277.8 189.53 277.15 189.27 276.4 189.27H272.4V194.72H276.4Z" fill="#303A32"/>
+                        <path d="M281.23 202.98H279.41L275.9 196.221H272.52V202.971H270.89V187.771H276.39C277.56 187.771 278.56 188.191 279.38 189.021C280.2 189.841 280.62 190.85 280.62 192.01C280.62 192.97 280.32 193.841 279.73 194.611C279.19 195.311 278.49 195.791 277.64 196.051L281.22 202.991L281.23 202.98ZM279.56 202.73H280.82L277.28 195.891L277.43 195.851C278.29 195.611 279 195.141 279.53 194.451C280.08 193.731 280.36 192.91 280.36 192.01C280.36 190.9 279.98 189.981 279.2 189.201C278.43 188.421 277.49 188.031 276.39 188.031H271.14V202.73H272.27V195.98H276.05L279.56 202.741V202.73ZM276.39 194.84H272.27V189.141H276.39C277.18 189.141 277.86 189.42 278.41 189.98C278.96 190.54 279.24 191.221 279.24 192.001C279.24 192.781 278.96 193.461 278.41 194.021C277.85 194.571 277.17 194.851 276.39 194.851V194.84ZM272.51 194.59H276.39C277.11 194.59 277.72 194.34 278.23 193.84C278.74 193.32 278.98 192.721 278.98 192.001C278.98 191.281 278.73 190.671 278.23 190.161C277.73 189.651 277.11 189.4 276.39 189.4H272.51V194.601V194.59Z" fill="#303A32"/>
+                        <path d="M292.16 203C291.19 202.96 290.31 202.7 289.5 202.24C288.58 201.71 287.96 201.01 287.63 200.13L288.92 199.66C289.14 200.26 289.59 200.74 290.27 201.11C290.87 201.43 291.51 201.61 292.21 201.64C293.27 201.68 294.16 201.41 294.88 200.84C295.52 200.33 295.86 199.72 295.89 199.03C295.95 197.72 294.75 196.73 292.31 196.04C290.55 195.55 289.29 194.86 288.53 193.98C287.95 193.31 287.68 192.55 287.72 191.71C287.78 190.29 288.39 189.22 289.53 188.52C290.44 187.96 291.54 187.72 292.83 187.78C294.39 187.85 295.63 188.38 296.56 189.38L295.55 190.32C294.88 189.59 293.95 189.2 292.77 189.14C291.76 189.1 290.92 189.28 290.25 189.68C289.52 190.13 289.13 190.83 289.09 191.76C289.03 193.04 290.23 194.02 292.67 194.71C294.43 195.2 295.69 195.89 296.45 196.78C297.03 197.46 297.3 198.22 297.26 199.07C297.2 200.19 296.7 201.13 295.74 201.9C294.82 202.64 293.72 203 292.42 203C292.34 203 292.25 203 292.16 203Z" fill="#303A32"/>
+                        <path d="M292.34 203.13C292.29 203.13 292.22 203.13 292.16 203.13C291.19 203.09 290.28 202.83 289.44 202.35C288.5 201.81 287.85 201.08 287.51 200.18L287.47 200.06L289 199.5L289.04 199.62C289.25 200.19 289.67 200.64 290.33 201C290.93 201.32 291.54 201.49 292.22 201.51C293.24 201.56 294.11 201.29 294.81 200.74C295.42 200.25 295.74 199.68 295.77 199.02C295.83 197.79 294.65 196.83 292.28 196.16C290.51 195.67 289.22 194.96 288.44 194.06C287.84 193.37 287.56 192.57 287.6 191.7C287.66 190.24 288.29 189.13 289.47 188.41C290.39 187.85 291.52 187.59 292.84 187.65C294.43 187.72 295.71 188.27 296.66 189.29L296.74 189.38L295.55 190.49L295.47 190.4C294.83 189.7 293.92 189.32 292.77 189.26C291.8 189.22 290.97 189.4 290.32 189.78C289.63 190.21 289.26 190.87 289.22 191.76C289.16 192.96 290.34 193.91 292.71 194.58C294.49 195.07 295.78 195.78 296.55 196.69C297.15 197.39 297.43 198.19 297.39 199.07C297.33 200.22 296.8 201.21 295.82 201.99C294.88 202.75 293.76 203.12 292.42 203.12C292.4 203.12 292.37 203.12 292.34 203.12V203.13ZM292.16 202.88C292.22 202.88 292.28 202.88 292.33 202.88C292.35 202.88 292.38 202.88 292.4 202.88C293.7 202.88 294.76 202.53 295.66 201.81C296.59 201.06 297.08 200.17 297.13 199.07C297.17 198.25 296.91 197.53 296.35 196.87C295.61 196 294.36 195.32 292.63 194.84C290.13 194.13 288.9 193.1 288.96 191.76C289 190.79 289.41 190.05 290.18 189.58C290.87 189.17 291.74 188.98 292.77 189.02C293.94 189.08 294.87 189.46 295.55 190.15L296.38 189.38C295.48 188.46 294.31 187.98 292.82 187.91C291.56 187.85 290.47 188.09 289.59 188.63C288.49 189.31 287.9 190.35 287.84 191.72C287.8 192.53 288.06 193.26 288.62 193.9C289.36 194.76 290.62 195.44 292.34 195.92C294.84 196.63 296.07 197.67 296.01 199.04C295.98 199.77 295.62 200.41 294.95 200.94C294.21 201.53 293.29 201.81 292.2 201.77C291.49 201.74 290.84 201.56 290.21 201.23C289.55 200.87 289.09 200.4 288.85 199.83L287.79 200.21C288.12 201.01 288.7 201.64 289.56 202.14C290.37 202.6 291.22 202.84 292.16 202.88Z" fill="#303A32"/>
+                        <path d="M72.89 150.33V45.3301H78.89V144.78H112.19V150.33H72.89Z" fill="#303A32"/>
+                        <path d="M148.94 45.3301H142.94V150.18H148.94V45.3301Z" fill="#303A32"/>
+                        <path d="M179.39 45.3301H184.64L199.49 133.08L214.19 45.3301H219.59L202.19 149.88L202.34 150.33H196.49L196.64 149.88L179.39 45.3301Z" fill="#303A32"/>
+                        <path d="M276 45.3301H281.25L296.1 133.08L310.8 45.3301H316.2L298.8 149.88L298.95 150.33H293.1L293.25 149.88L276 45.3301Z" fill="#303A32"/>
+                        <path d="M352.05 45.3301H346.05V150.18H352.05V45.3301Z" fill="#303A32"/>
+                        <path d="M416.55 92.7301V98.2801H389.25V144.63H421.8V150.33H383.55V45.3301H422.55V50.8801H389.25V92.7301H416.55Z" fill="#303A32"/>
+                        <path d="M249.2 24.8096H247.2V170.7H249.2V24.8096Z" fill="#303A32"/>
+                        <path d="M495.44 196.49H316.2V194.49H493.44V2H2V194.49H180.14V196.49H0V0H495.44V196.49Z" fill="#303A32"/>
+                    </g>
+                </g>
+                <defs>
+                    <clipPath id="clip0_91_778">
+                        <rect width="495" height="203" fill="white"/>
+                    </clipPath>
+                    <clipPath id="clip1_91_778">
+                        <rect width="495.44" height="203.13" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            </div><!-- end popup-menu__logo -->
+
+
+        <div class="popup-menu__socials socials">
+                <a href="#">
+                    <img class="socials__image" src="img/footer/socials/instagram.svg" alt="instagram logo">
+                </a>
+                <a href="#">
+                    <img class="socials__image" src="img/footer/socials/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="#">
+                    <img class="socials__image" src="img/footer/socials/pinterest.svg" alt="pinterest logo">
+                </a>
+                <a href="#">
+                    <img class="socials__image" src="img/footer/socials/facebook.svg" alt="facebook logo">
+                </a>
+            </div>
+            <ul class="popup-menu__list">
+                <li class="popup-menu__list--title">Suits</li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">LIV</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">EMIL</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">CAMILLE</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">MAGNUS</a>
+                </li>
+            </ul>
+            <ul class="popup-menu__list">
+                <li class="popup-menu__list--title">You</li>
+                <li class="popup-menu__item">
+                    <a href="#" class="signin_sidebar popup-menu__list--link">Your Account</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link location-sidebar">Country & Language</a>
+                </li>
+            </ul>
+            <ul class="popup-menu__list">
+                <li class="popup-menu__list--title">Inspiration</li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Stories</a>
+                </li>
+            </ul>
+            <ul class="popup-menu__list">
+                <li class="popup-menu__list--title">Service</li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Frequently Asked Questions</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Ordering</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Shipping</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Returning a Product</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="popup-menu__list">
+                <li class="popup-menu__list--title">The brand</li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Our Team</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Our Values</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Beginnings</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">The Story of the Suit</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">ANVERS</a>
+                </li>
+                <li class="popup-menu__item">
+                    <a href="#" class="popup-menu__list--link">Press and Collaborations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+        <div id="account-menu" class="account-menu popup-menu popup">
+    <div class="popup-menu__body">
+        <div class="popup-menu__content popup__content">
+            <a href="#" class="popup-menu__close close-popup">
+                <img src="img/close-btn.svg" alt="close">
+            </a>
+            <img class="popup-menu__logo" src="img/Logo-dark.svg" width="141" alt="Logo">
+
+            <h2 class="account-menu__title">Sign in</h2>
+            <form class="popup-menu__form form">
+                <p class="form__text">Sign in to your account using your credentials. If you don’t have an account you
+                    can also <a href="#" class="form__link">create a new account</a></p>
+                <input type="email" aria-label="Email" name="email" placeholder="E-mail address">
+                <input type="password" aria-label="Password" name="password" placeholder="Password">
+                <p class="form__text--additional">Forgot your password? <a href="#" class="form__link">Click here to reset.</a></p>
+                <button class="button button__link" type="submit">
+                    Sign in
+                </button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__content">
+
+            <div class="footer__list list left">
+                <h2 class="list__title">Service</h2>
+                <ul>
+                    <li class="footer__item">
+                        <a href="#">Frequently Asked Questions</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Ordering</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Shipping</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Returning a Product</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div><!-- end footer__list list left -->
+
+
+            <div class="footer__list list middle">
+                <h2 class="list__title">The brand</h2>
+                <ul>
+                <li class="footer__item">
+                    <a href="#">Our Team</a></li>
+                <li class="footer__item">
+                    <a href="#">Our Values</a></li>
+                <li class="footer__item">
+                    <a href="#">The Story of the Suit</a></li>
+                <li class="footer__item">
+                    <a href="#">ANVERS</a></li>
+                <li class="footer__item">
+                    <a href="#">Press and Collaborations</a></li>
+                </ul>
+            </div>
+            <div class="footer__list list right">
+                <h2 class="list__title">Let’s stay in touch</h2>
+                <ul>
+                <li class="footer__item">
+                    <p>Join our LIV|VIE community by subscribing to our newsletter and receive a 10% discount on your
+                        next order. </p>
+                </li>
+                <li class="footer__item subscribe">
+                    <form>
+                    <input type="email" aria-label="Email" name="subscribe" placeholder="Your email">
+                    <button class="button button__link">
+                        <span>Subscribe</span>
+                    </button>
+                    </form>
+                </li>
+                <li class="footer__item socials">
+                    <a href="#" target="_blank">
+                        <span class="icon icon-insta"></span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <span class="icon icon-linkedln"></span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <span class="icon icon-pinterest"></span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <span class="icon icon-facebook"></span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom footer-bottom">
+            <div class="footer-bottom__list bottom-payments">
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/mastercard.svg" alt="mastercard payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/visa.svg" alt="visa payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/ideal.svg" alt="ideal payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/bancontact.svg" alt="bancontact payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/PayPal.svg" alt="PayPal payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/Klarna.svg" alt="Klarna payment">
+                </a>
+                <a href="#" class="footer-bottom__item">
+                    <img src="img/footer/payments/DPD.svg" alt="DPD payment">
+                </a>
+            </div>
+            <div class="footer-bottom__list bottom-content">
+                <a href="#" class="mobile-hide">Ⓒ 2022 LIV|VIE</a>
+                <a href="#">Disclaimer</a>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Cookie policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<script src="js/app.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.reset_button{
+  -webkit-appearance: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  outline: none;
+
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 176px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #303A32;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $black-main ;
+    border: 1px solid $black-main;
+
+    .button__link {
+      color: $white;
+    }
+  }
+
+  &__link {
+    @include btn-link;
+    color: $black-earth;
+    padding: 13px 26px;
+    max-width: unset;
+    width: auto;
+    cursor: pointer;
+    min-height: 42px;
+    &:hover{
+      background-color: $black-main;
+      color: $white;
+    }
+    &:disabled{
+      opacity: 0.3;
+      pointer-events: none;
+      cursor:default;
+    }
+  }
+}
+
+.black_button{
+  padding: 13px 26px;
+  background-color: $black_main;
+  color: #ffffff;
+  &:hover{
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: $black_main;
+  }
+}
+
+.button__cancel{
+  cursor: pointer;
+  background: none;
+  margin-left: 16px;
+
+  @include btn-link;
+  padding: 13px 26px;
+  max-width: unset;
+  width: auto;
+  min-height: 42px;
+  border: none!important;
+  color:#ADA597;
+  &:hover{
+    color: $black-earth;
+    background: none;
+  }
+}
+
+.grey_button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 28px;
+  background-color: transparent;
+  border-color: #A5A098;
+  color: #A5A098;
+  &:hover{
+    background-color: #A5A098;
+    color: #ffffff;
+  }
+}
